@@ -1,0 +1,11 @@
+aa = [1, 10,56,88,7]
+for i in range(0,len(aa)-1):
+    for j in range(0,len(aa)-1):
+        if aa[j]<aa[j+1]:
+            continue
+        elif aa[j]>aa[j+1]:
+            aa[j],aa[j+1]=aa[j+1],aa[j]
+            
+print(aa)           
+output 
+[1,7,10,56,88]
