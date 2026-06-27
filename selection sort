@@ -1,0 +1,8 @@
+arr=[4,8,2,3,0,22]
+for pos in range((len(arr))-1):
+    min1=pos 
+    for i in range(pos+1,len(arr)):
+        if arr[i]<arr[min1]:
+            min1=i 
+    arr[pos],arr[min1]=arr[min1],arr[pos]    
+print(arr) 
