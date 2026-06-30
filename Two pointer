@@ -1,0 +1,17 @@
+arr=[1,2,3,4,5,6,7,8]
+target=10 
+l=0
+h=1
+r=len(arr)-1
+while l<r:
+    a=arr[l]+arr[r]
+    if a==target:
+        h=0
+        print(l,r)
+        break 
+    elif a<target:
+        l=l+1 
+    elif a>target:
+        r=r-1 
+if h==1:
+    print("No Combination")
