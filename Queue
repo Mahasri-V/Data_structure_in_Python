@@ -1,0 +1,9 @@
+from queue import Queue 
+
+q=Queue()
+q.put("hi")
+q.put(5)
+q.put(True)
+print(q.queue[0])
+q.get()
+print(q.empty())
